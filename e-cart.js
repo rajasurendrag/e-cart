@@ -1,5 +1,5 @@
 import { products } from "./products.js";
-import { sort } from "./operations.js";
+import { sort, search } from "./operations.js";
 
 const main = () => {
   const query = prompt("e-cart:");

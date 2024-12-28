@@ -1,12 +1,10 @@
-export const sort = (property, order, products) => {
-  const compareByOrder = (product1, product2) =>
-    product1[property] - product2[property];
+export const sort = (key, order, products) => {
+  const asc = (object1, object2) => object1[key] - object2[key];
+  const dsc = (object1, object2) => object2[key] - object1[key];
 
-  if (order === 1) {
-    return products.sort((product1, product2) =>
-      compareByOrder(product2, product1)
-    );
-  }
+  return products.toSorted(order === 1 ? dsc : asc);
+};
 
-  return products.sort(compareByOrder);
+export const search = (key, value, records) => {
+  return [records.find((data) => data[key] === value)];
 };
