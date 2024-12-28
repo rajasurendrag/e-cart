@@ -8,6 +8,7 @@
    order - 1.ascending, 2.descending.
 
 3. Check Product Availability.
+   isProductAvailable - method receives allProducts, productName,
 
 4. Get Products with Rating Above 4.5.
 

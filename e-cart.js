@@ -1,5 +1,5 @@
 import { products } from "./products.js";
-import { sort, search } from "./operations.js";
+import { sort, search, topRatedProducts } from "./operations.js";
 
 const main = () => {
   const query = prompt("e-cart:");
@@ -10,6 +10,8 @@ const main = () => {
       return search(property, value, products);
     case "sort":
       return sort(property, Number(value), products);
+    case "minRating":
+      return topRatedProducts(value, products);
   }
 };
 
