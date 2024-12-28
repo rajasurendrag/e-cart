@@ -1,6 +1,6 @@
-export const sort = (property, order, records) => {
-  const asc = (object1, object2) => object1[property] - object2[property];
-  const dsc = (object1, object2) => object2[property] - object1[property];
+export const sort = (key, order, products) => {
+  const asc = (object1, object2) => object1[key] - object2[key];
+  const dsc = (object1, object2) => object2[key] - object1[key];
 
   return records.toSorted(order === 1 ? dsc : asc);
 };
