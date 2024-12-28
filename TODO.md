@@ -3,7 +3,7 @@
 1. Filter Products by Category.
 
 2. Sort Products by Price.
-   sort - method receives products, sortBy, order
+   sort - method receives products, sortBy, order.
    sortBy - price, rating, stock.
    order - 1.ascending, 2.descending.
 
