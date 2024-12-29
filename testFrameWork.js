@@ -1,5 +1,5 @@
 const resultMessage = (actual, expected, func) => {
-  return func(actual, expected) ? "✔" : "✘";
+  return func(actual, expected) ? "✔ passed" : "✘ failed";
 };
 
 const isEqual = (lhs, rhs) => lhs === rhs;

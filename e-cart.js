@@ -1,9 +1,15 @@
 import { products } from "./products.js";
-import { sort, search, topRatedProducts } from "./operations.js";
+import {
+  sort,
+  search,
+  topRatedProducts,
+  trim,
+  listOfProducts,
+} from "./operations.js";
 
-const main = () => {
+const eCart = () => {
   const query = prompt("e-cart:");
-  const [command, property, value] = query.split(" ");
+  const [command, property, value] = trim(query);
 
   switch (command) {
     case "search":
@@ -12,7 +18,19 @@ const main = () => {
       return sort(property, Number(value), products);
     case "minRating":
       return topRatedProducts(value, products);
+    case "list":
+      return listOfProducts(property, "category", products);
+    default:
+      return "InValid category";
   }
 };
 
-console.table(main());
+const main = () => {
+  while (confirm("do you want to perform more operations ?")) {
+    const result = eCart();
+
+    console.log(result.at(0) === undefined ? "inValid category" : result);
+  }
+};
+
+main();

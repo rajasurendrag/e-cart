@@ -5,6 +5,14 @@ export const sort = (key, order, records) => {
   return records.toSorted(order === 1 ? dsc : asc);
 };
 
+export const listOfProducts = (property, field, records) =>
+  records
+    .filter((record) => record[field] === property)
+    .map(({ name }) => name);
+
+export const absType = (value) =>
+  isNaN(Number(value)) ? value : Number(value);
+
 export const search = (property, value, records) => [
   records.find((data) => data[property] === value),
 ];
