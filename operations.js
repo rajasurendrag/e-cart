@@ -1,4 +1,4 @@
-export const sort = (key, order, products) => {
+export const sort = (key, order, records) => {
   const asc = (object1, object2) => object1[key] - object2[key];
   const dsc = (object1, object2) => object2[key] - object1[key];
 
@@ -8,6 +8,9 @@ export const sort = (key, order, products) => {
 export const search = (property, value, records) => [
   records.find((data) => data[property] === value),
 ];
+
+export const trim = (string) =>
+  string.split(" ").filter((element) => element !== "");
 
 export const topRatedProducts = (minRating, records) =>
   records.filter(({ rating }) => rating >= minRating);
