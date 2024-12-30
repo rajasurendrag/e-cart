@@ -1,7 +1,6 @@
 import { sort, search, trim, topRatedProducts } from "./operations.js";
 import { testFunc } from "./testFrameWork.js";
 import { products } from "./products.js";
-import { fruits } from "./testData.js";
 
 testFunc(topRatedProducts, [
   {

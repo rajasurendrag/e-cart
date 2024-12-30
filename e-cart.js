@@ -5,11 +5,13 @@ import {
   topRatedProducts,
   trim,
   listOfProducts,
+  absType,
 } from "./operations.js";
 
 const eCart = () => {
   const query = prompt("e-cart:");
-  const [command, property, value] = trim(query);
+  const [command, property, valueString] = trim(query);
+  const value = absType(valueString);
 
   switch (command) {
     case "search":
