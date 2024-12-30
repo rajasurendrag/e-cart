@@ -1,3 +1,76 @@
+export const users = [
+  {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    userId: "1023",
+    isActive: true,
+    cart: [],
+  },
+  {
+    name: "Jane Smith",
+    email: "jane.smith@example.com",
+    userId: "2456",
+    isActive: false,
+    cart: [],
+  },
+  {
+    name: "Michael Brown",
+    email: "michael.brown@example.com",
+    userId: "3489",
+    isActive: true,
+    cart: [],
+  },
+  {
+    name: "Emily Clark",
+    email: "emily.clark@example.com",
+    userId: "4312",
+    isActive: true,
+    cart: [],
+  },
+  {
+    name: "David Lee",
+    email: "david.lee@example.com",
+    userId: "5241",
+    isActive: false,
+    cart: [],
+  },
+  {
+    name: "Sarah Wilson",
+    email: "sarah.wilson@example.com",
+    userId: "6384",
+    isActive: true,
+    cart: [],
+  },
+  {
+    name: "Daniel Harris",
+    email: "daniel.harris@example.com",
+    userId: "7562",
+    isActive: false,
+    cart: [],
+  },
+  {
+    name: "Olivia Turner",
+    email: "olivia.turner@example.com",
+    userId: "8921",
+    isActive: true,
+    cart: [],
+  },
+  {
+    name: "James Carter",
+    email: "james.carter@example.com",
+    userId: "9374",
+    isActive: true,
+    cart: [],
+  },
+  {
+    name: "Sophia Walker",
+    email: "sophia.walker@example.com",
+    userId: "1048",
+    isActive: false,
+    cart: [],
+  },
+];
+
 export const fruits = [
   {
     productID: 1,
