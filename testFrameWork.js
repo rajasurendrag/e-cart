@@ -23,7 +23,7 @@ const areObjectsEqual = (obj1, obj2) => {
 
 export const testFunc = (func, tests) => {
   const result = tests.map(({ description, expected, args }) => {
-    const status = resultMessage(func(...args), expected, areEqual);
+    const status = resultMessage(func(...args), expected, areObjectsEqual);
     return { status, description };
   });
 

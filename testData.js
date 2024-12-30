@@ -20,18 +20,4 @@ export const fruits = [
     stock: 200,
     rating: 4.6,
   },
-  {
-    productID: 4,
-    name: "Mango",
-    price: 2.5,
-    stock: 50,
-    rating: 4.8,
-  },
-  {
-    productID: 5,
-    name: "Strawberry",
-    price: 3.0,
-    stock: 75,
-    rating: 4.9,
-  },
 ];
